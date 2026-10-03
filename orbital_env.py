@@ -240,3 +240,14 @@ def evaluation_truth(scenario_index=1):
 if __name__ == "__main__":
     print(initial_observations()[:2])
 
+
+def replication_observation_times():
+    """
+    Holdout observations.
+    These times should NOT be used during discovery.
+    Only use them after a hypothesis has been selected.
+    """
+    return [
+        float(t)
+        for t in np.linspace(8.25, 10.0, 8)
+    ]
