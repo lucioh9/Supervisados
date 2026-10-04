@@ -1,6 +1,4 @@
-# LYDH — Look where humans don't. Trust only what replicates.
-
-**LYDH is an agentic discovery lab that decides what to test next, tries to prove its own ideas wrong, and accepts a conclusion only after it holds on data it never saw.**
+# LYDH — Look where humans don't. 
 
 Built for the Databricks × Hack-Nation *Agentic Scientific Discovery* challenge. Orchestrated by **Omnigent**; agents powered by **Claude**.
 
@@ -16,7 +14,7 @@ Science is limited by **human attention**. A researcher only tests the explanati
 
 Large language models have read across more disciplines than any person can. They may propose bridges our biology would not. But a creative idea without proof is just a guess. LYDH pairs broad **proposal** with ruthless **falsification**.
 
-## What makes LYDH different (epistemology, not just automation)
+## What makes LYDH different 
 
 | Existing direction | What it does | What LYDH adds |
 |---|---|---|
