@@ -1,0 +1,1189 @@
+{
+ "meta": {
+  "project": "LYDH",
+  "backend": "local-math-engine",
+  "scenario_index": 1,
+  "policy": "attn",
+  "seed": 10,
+  "noise_std": 0.001,
+  "max_obs": 24,
+  "created": "2026-10-04T07:27:11",
+  "criteria": {
+   "p_hidden_threshold": 0.99,
+   "cluster_threshold": 0.9,
+   "min_obs_for_decision": 3,
+   "falsify_threshold": 0.001,
+   "replication_pvalue": 0.01,
+   "replication_llr": 4.605170185988092
+  },
+  "selection": "mediana de n_observations entre 20 corridas exitosas de 20 semillas (seed elegida=10)"
+ },
+ "hypotheses": [
+  {
+   "id": "H0_no_hidden",
+   "kind": "null",
+   "label": "Sin cuerpo oculto (solo ruido)",
+   "mass": null,
+   "a": null,
+   "gi": null,
+   "gj": null
+  },
+  {
+   "id": "H_m3_a1.30",
+   "kind": "hidden_body",
+   "label": "Cuerpo oculto m=3e-05 M☉, a=1.30 AU",
+   "mass": 3e-05,
+   "a": 1.3,
+   "gi": 0,
+   "gj": 0
+  },
+  {
+   "id": "H_m3_a1.45",
+   "kind": "hidden_body",
+   "label": "Cuerpo oculto m=3e-05 M☉, a=1.45 AU",
+   "mass": 3e-05,
+   "a": 1.45,
+   "gi": 0,
+   "gj": 1
+  },
+  {
+   "id": "H_m3_a1.60",
+   "kind": "hidden_body",
+   "label": "Cuerpo oculto m=3e-05 M☉, a=1.60 AU",
+   "mass": 3e-05,
+   "a": 1.6,
+   "gi": 0,
+   "gj": 2
+  },
+  {
+   "id": "H_m3_a1.75",
+   "kind": "hidden_body",
+   "label": "Cuerpo oculto m=3e-05 M☉, a=1.75 AU",
+   "mass": 3e-05,
+   "a": 1.75,
+   "gi": 0,
+   "gj": 3
+  },
+  {
+   "id": "H_m3_a1.90",
+   "kind": "hidden_body",
+   "label": "Cuerpo oculto m=3e-05 M☉, a=1.90 AU",
+   "mass": 3e-05,
+   "a": 1.9,
+   "gi": 0,
+   "gj": 4
+  },
+  {
+   "id": "H_m4_a1.30",
+   "kind": "hidden_body",
+   "label": "Cuerpo oculto m=4e-05 M☉, a=1.30 AU",
+   "mass": 4e-05,
+   "a": 1.3,
+   "gi": 1,
+   "gj": 0
+  },
+  {
+   "id": "H_m4_a1.45",
+   "kind": "hidden_body",
+   "label": "Cuerpo oculto m=4e-05 M☉, a=1.45 AU",
+   "mass": 4e-05,
+   "a": 1.45,
+   "gi": 1,
+   "gj": 1
+  },
+  {
+   "id": "H_m4_a1.60",
+   "kind": "hidden_body",
+   "label": "Cuerpo oculto m=4e-05 M☉, a=1.60 AU",
+   "mass": 4e-05,
+   "a": 1.6,
+   "gi": 1,
+   "gj": 2
+  },
+  {
+   "id": "H_m4_a1.75",
+   "kind": "hidden_body",
+   "label": "Cuerpo oculto m=4e-05 M☉, a=1.75 AU",
+   "mass": 4e-05,
+   "a": 1.75,
+   "gi": 1,
+   "gj": 3
+  },
+  {
+   "id": "H_m4_a1.90",
+   "kind": "hidden_body",
+   "label": "Cuerpo oculto m=4e-05 M☉, a=1.90 AU",
+   "mass": 4e-05,
+   "a": 1.9,
+   "gi": 1,
+   "gj": 4
+  },
+  {
+   "id": "H_m5_a1.30",
+   "kind": "hidden_body",
+   "label": "Cuerpo oculto m=5e-05 M☉, a=1.30 AU",
+   "mass": 5e-05,
+   "a": 1.3,
+   "gi": 2,
+   "gj": 0
+  },
+  {
+   "id": "H_m5_a1.45",
+   "kind": "hidden_body",
+   "label": "Cuerpo oculto m=5e-05 M☉, a=1.45 AU",
+   "mass": 5e-05,
+   "a": 1.45,
+   "gi": 2,
+   "gj": 1
+  },
+  {
+   "id": "H_m5_a1.60",
+   "kind": "hidden_body",
+   "label": "Cuerpo oculto m=5e-05 M☉, a=1.60 AU",
+   "mass": 5e-05,
+   "a": 1.6,
+   "gi": 2,
+   "gj": 2
+  },
+  {
+   "id": "H_m5_a1.75",
+   "kind": "hidden_body",
+   "label": "Cuerpo oculto m=5e-05 M☉, a=1.75 AU",
+   "mass": 5e-05,
+   "a": 1.75,
+   "gi": 2,
+   "gj": 3
+  },
+  {
+   "id": "H_m5_a1.90",
+   "kind": "hidden_body",
+   "label": "Cuerpo oculto m=5e-05 M☉, a=1.90 AU",
+   "mass": 5e-05,
+   "a": 1.9,
+   "gi": 2,
+   "gj": 4
+  },
+  {
+   "id": "H_m6_a1.30",
+   "kind": "hidden_body",
+   "label": "Cuerpo oculto m=6e-05 M☉, a=1.30 AU",
+   "mass": 6e-05,
+   "a": 1.3,
+   "gi": 3,
+   "gj": 0
+  },
+  {
+   "id": "H_m6_a1.45",
+   "kind": "hidden_body",
+   "label": "Cuerpo oculto m=6e-05 M☉, a=1.45 AU",
+   "mass": 6e-05,
+   "a": 1.45,
+   "gi": 3,
+   "gj": 1
+  },
+  {
+   "id": "H_m6_a1.60",
+   "kind": "hidden_body",
+   "label": "Cuerpo oculto m=6e-05 M☉, a=1.60 AU",
+   "mass": 6e-05,
+   "a": 1.6,
+   "gi": 3,
+   "gj": 2
+  },
+  {
+   "id": "H_m6_a1.75",
+   "kind": "hidden_body",
+   "label": "Cuerpo oculto m=6e-05 M☉, a=1.75 AU",
+   "mass": 6e-05,
+   "a": 1.75,
+   "gi": 3,
+   "gj": 3
+  },
+  {
+   "id": "H_m6_a1.90",
+   "kind": "hidden_body",
+   "label": "Cuerpo oculto m=6e-05 M☉, a=1.90 AU",
+   "mass": 6e-05,
+   "a": 1.9,
+   "gi": 3,
+   "gj": 4
+  },
+  {
+   "id": "H_m7_a1.30",
+   "kind": "hidden_body",
+   "label": "Cuerpo oculto m=7e-05 M☉, a=1.30 AU",
+   "mass": 7e-05,
+   "a": 1.3,
+   "gi": 4,
+   "gj": 0
+  },
+  {
+   "id": "H_m7_a1.45",
+   "kind": "hidden_body",
+   "label": "Cuerpo oculto m=7e-05 M☉, a=1.45 AU",
+   "mass": 7e-05,
+   "a": 1.45,
+   "gi": 4,
+   "gj": 1
+  },
+  {
+   "id": "H_m7_a1.60",
+   "kind": "hidden_body",
+   "label": "Cuerpo oculto m=7e-05 M☉, a=1.60 AU",
+   "mass": 7e-05,
+   "a": 1.6,
+   "gi": 4,
+   "gj": 2
+  },
+  {
+   "id": "H_m7_a1.75",
+   "kind": "hidden_body",
+   "label": "Cuerpo oculto m=7e-05 M☉, a=1.75 AU",
+   "mass": 7e-05,
+   "a": 1.75,
+   "gi": 4,
+   "gj": 3
+  },
+  {
+   "id": "H_m7_a1.90",
+   "kind": "hidden_body",
+   "label": "Cuerpo oculto m=7e-05 M☉, a=1.90 AU",
+   "mass": 7e-05,
+   "a": 1.9,
+   "gi": 4,
+   "gj": 4
+  }
+ ],
+ "initial_observations": [
+  {
+   "time": 0.1,
+   "x": 0.23893791712071924,
+   "y": 0.9726022390584351
+  },
+  {
+   "time": 0.37142857142857144,
+   "x": -0.9944824591168133,
+   "y": 0.10597604849010997
+  },
+  {
+   "time": 0.6428571428571428,
+   "x": 0.026899726804581747,
+   "y": -1.0000103273559922
+  },
+  {
+   "time": 0.9142857142857143,
+   "x": 0.9891504879929712,
+   "y": 0.16187695561633084
+  },
+  {
+   "time": 1.1857142857142857,
+   "x": -0.2922535804100991,
+   "y": 0.9553780036032463
+  },
+  {
+   "time": 1.457142857142857,
+   "x": -0.9076269949854122,
+   "y": -0.4195289530287696
+  },
+  {
+   "time": 1.7285714285714286,
+   "x": 0.5334587073289406,
+   "y": -0.8439076073866499
+  },
+  {
+   "time": 2.0,
+   "x": 0.7656834386078251,
+   "y": 0.6431179654398128
+  },
+  {
+   "time": 7.75,
+   "x": 0.6401073810205357,
+   "y": -0.7691136393042812
+  },
+  {
+   "time": 6.5,
+   "x": -0.7664469584357667,
+   "y": -0.6448971214088114
+  },
+  {
+   "time": 8.0,
+   "x": 0.7664511559609386,
+   "y": 0.6377240921312731
+  }
+ ],
+ "steps": [
+  {
+   "type": "step",
+   "step": 0,
+   "n_observations": 0,
+   "status": "MONITORING",
+   "anomaly": {
+    "chi2": 29.57341476666479,
+    "dof": 16,
+    "p_value": 0.02034424607021378,
+    "significant": false,
+    "worst_time": 0.9142857142857143,
+    "worst_sigma": 2.4303082588205327
+   },
+   "experiment": null,
+   "observation": null,
+   "obs_vs_models": null,
+   "newly_falsified": [
+    "H_m3_a1.30",
+    "H_m4_a1.30",
+    "H_m5_a1.30",
+    "H_m5_a1.45",
+    "H_m6_a1.30",
+    "H_m6_a1.45",
+    "H_m7_a1.30",
+    "H_m7_a1.45"
+   ],
+   "candidate_scores": [],
+   "p_hidden_before": null,
+   "next_decision": "Pick the first most useful measurement.",
+   "agent_messages": [
+    {
+     "agent": "observer",
+     "source": "code",
+     "message": "'No hidden planet' explains our first 8 measurements so far."
+    },
+    {
+     "agent": "hypothesis",
+     "source": "code",
+     "message": "25 guesses for a hidden planet (each a different mass and distance), plus one guess that there is no planet and the gap is just measurement noise. Each guess predicts a different orbit."
+    }
+   ],
+   "posterior": {
+    "H0_no_hidden": 0.28771333089142764,
+    "H_m3_a1.30": 8.234284279061483e-08,
+    "H_m3_a1.45": 0.04759266813903721,
+    "H_m3_a1.60": 0.11943159799749459,
+    "H_m3_a1.75": 0.07200502127468733,
+    "H_m3_a1.90": 0.044998206715007774,
+    "H_m4_a1.30": 2.868594041484152e-12,
+    "H_m4_a1.45": 0.009571101187993963,
+    "H_m4_a1.60": 0.08799056233216378,
+    "H_m4_a1.75": 0.06393799478345268,
+    "H_m4_a1.90": 0.039795456294816185,
+    "H_m5_a1.30": 5.13190538531469e-18,
+    "H_m5_a1.45": 0.0008196139628208455,
+    "H_m5_a1.60": 0.04525750433433934,
+    "H_m5_a1.75": 0.04733265553368464,
+    "H_m5_a1.90": 0.03166742457620279,
+    "H_m6_a1.30": 4.730557929123697e-25,
+    "H_m6_a1.45": 2.9917940562957233e-05,
+    "H_m6_a1.60": 0.016253532995091587,
+    "H_m6_a1.75": 0.02921288856928841,
+    "H_m6_a1.90": 0.022674144610146402,
+    "H_m7_a1.30": 2.2543222320029907e-33,
+    "H_m7_a1.45": 4.659925569953693e-07,
+    "H_m7_a1.60": 0.0040763621644027154,
+    "H_m7_a1.75": 0.015031629795608816,
+    "H_m7_a1.90": 0.014607837563501964
+   },
+   "p_hidden": 0.7122866691085723,
+   "map_id": "H0_no_hidden",
+   "map_p": 0.28771333089142764,
+   "cluster_mass": 0.28771333089142764,
+   "entropy_bits": 3.5372898085302524,
+   "n_falsified": 8
+  },
+  {
+   "type": "step",
+   "step": 1,
+   "n_observations": 1,
+   "status": "ANOMALY DETECTED",
+   "anomaly": {
+    "chi2": 73.18000356719791,
+    "dof": 18,
+    "p_value": 1.2995422318178474e-08,
+    "significant": true,
+    "worst_time": 7.75,
+    "worst_sigma": 6.603528511374288
+   },
+   "experiment": {
+    "time": 7.75,
+    "policy": "attn",
+    "reason": "At year 7.8, our two leading guesses disagree the most: no hidden planet (29% likely) vs a planet 1.60 AU out (mass 4) (9% likely). They predict positions 6.3× the normal measurement error apart, so measuring here should rule one of them out.",
+    "score": 6.990604201120494
+   },
+   "observation": {
+    "time": 7.75,
+    "x": 0.6401073810205357,
+    "y": -0.7691136393042812
+   },
+   "obs_vs_models": {
+    "obs": [
+     0.6401073810205357,
+     -0.7691136393042812
+    ],
+    "null": [
+     0.6439587964335858,
+     -0.7637495747896941
+    ],
+    "map": [
+     0.6397059999027138,
+     -0.7684560709876376
+    ],
+    "null_sigma": 6.603528511374288,
+    "map_sigma": 0.7703913893583434
+   },
+   "newly_falsified": [
+    "H0_no_hidden",
+    "H_m3_a1.75",
+    "H_m3_a1.90",
+    "H_m4_a1.90",
+    "H_m7_a1.60"
+   ],
+   "candidate_scores": [
+    [
+     2.25,
+     0.13132162152445745
+    ],
+    [
+     2.5,
+     0.27197853546645484
+    ],
+    [
+     2.75,
+     1.0612027904345165
+    ],
+    [
+     3.0,
+     1.0590804586435443
+    ],
+    [
+     3.25,
+     0.38077930337810895
+    ],
+    [
+     3.5,
+     0.6565101281299571
+    ],
+    [
+     3.75,
+     1.7756251304695254
+    ],
+    [
+     4.0,
+     1.5723654120144932
+    ],
+    [
+     4.25,
+     0.49167234838284635
+    ],
+    [
+     4.5,
+     1.0842405881919386
+    ],
+    [
+     4.75,
+     2.758350042458265
+    ],
+    [
+     5.0,
+     2.4161928712406215
+    ],
+    [
+     5.25,
+     0.45917840519626363
+    ],
+    [
+     5.5,
+     1.6495709164436865
+    ],
+    [
+     5.75,
+     3.8918010953324123
+    ],
+    [
+     6.0,
+     3.1556186913259627
+    ],
+    [
+     6.25,
+     0.5169832615266237
+    ],
+    [
+     6.5,
+     2.0567616441964933
+    ],
+    [
+     6.75,
+     5.512602273304202
+    ],
+    [
+     7.0,
+     4.422799845222533
+    ],
+    [
+     7.25,
+     0.5690848011302889
+    ],
+    [
+     7.5,
+     2.3929842820377534
+    ],
+    [
+     7.75,
+     6.990604201120494
+    ],
+    [
+     8.0,
+     5.625856162602551
+    ]
+   ],
+   "p_hidden_before": 0.7122866691085723,
+   "next_decision": "Still unsure: pick the next most useful measurement.",
+   "agent_messages": [
+    {
+     "agent": "planner",
+     "source": "code",
+     "message": "At year 7.8, our two leading guesses disagree the most: no hidden planet (29% likely) vs a planet 1.60 AU out (mass 4) (9% likely). They predict positions 6.3× the normal measurement error apart, so measuring here should rule one of them out."
+    },
+    {
+     "agent": "scientist",
+     "source": "code",
+     "message": "Chance of a hidden planet: 71% → 100%. 5 guesses ruled out this step (13 in total). Still unsure: pick the next most useful measurement."
+    }
+   ],
+   "posterior": {
+    "H0_no_hidden": 8.470638210656049e-10,
+    "H_m3_a1.30": 1.6875297199461415e-10,
+    "H_m3_a1.45": 0.05797917689854384,
+    "H_m3_a1.60": 0.15804839448148808,
+    "H_m3_a1.75": 0.0001713387759820844,
+    "H_m3_a1.90": 1.29722609325127e-05,
+    "H_m4_a1.30": 5.029472096849558e-14,
+    "H_m4_a1.45": 0.02571281794414785,
+    "H_m4_a1.60": 0.5669766465938063,
+    "H_m4_a1.75": 0.002533855885848817,
+    "H_m4_a1.90": 0.00017085561940405547,
+    "H_m5_a1.30": 3.306472021834476e-19,
+    "H_m5_a1.45": 0.0002696975179090229,
+    "H_m5_a1.60": 0.12058243384694485,
+    "H_m5_a1.75": 0.013245128033668896,
+    "H_m5_a1.90": 0.0011512827648468564,
+    "H_m6_a1.30": 5.694958570247413e-26,
+    "H_m6_a1.45": 6.78100541261313e-08,
+    "H_m6_a1.60": 0.001578597208142008,
+    "H_m6_a1.75": 0.024510695777838647,
+    "H_m6_a1.90": 0.003969305756122678,
+    "H_m7_a1.30": 2.99824178741308e-34,
+    "H_m7_a1.45": 4.1423087457231207e-13,
+    "H_m7_a1.60": 1.3205443003856502e-06,
+    "H_m7_a1.75": 0.016082676526000105,
+    "H_m7_a1.90": 0.007002734737737607
+   },
+   "p_hidden": 0.9999999991529361,
+   "map_id": "H_m4_a1.60",
+   "map_p": 0.5669766465938063,
+   "cluster_mass": 0.9455194899783399,
+   "entropy_bits": 2.073694443530629,
+   "n_falsified": 13
+  },
+  {
+   "type": "step",
+   "step": 2,
+   "n_observations": 2,
+   "status": "HYPOTHESIS FALSIFIED",
+   "anomaly": {
+    "chi2": 75.13639302935633,
+    "dof": 20,
+    "p_value": 2.58531270174399e-08,
+    "significant": true,
+    "worst_time": 7.75,
+    "worst_sigma": 6.603528511374288
+   },
+   "experiment": {
+    "time": 6.5,
+    "policy": "attn",
+    "reason": "At year 6.5, our two leading guesses disagree the most: a planet 1.45 AU out (mass 3) (6% likely) vs a planet 1.60 AU out (mass 4) (57% likely). They predict positions 2.8× the normal measurement error apart, so measuring here should rule one of them out.",
+    "score": 1.119096433339871
+   },
+   "observation": {
+    "time": 6.5,
+    "x": -0.7664469584357667,
+    "y": -0.6448971214088114
+   },
+   "obs_vs_models": {
+    "obs": [
+     -0.7664469584357667,
+     -0.6448971214088114
+    ],
+    "null": [
+     -0.7651831433658687,
+     -0.6442978210406678
+    ],
+    "map": [
+     -0.767234140408726,
+     -0.6448928620175917
+    ],
+    "null_sigma": 1.398709927811489,
+    "map_sigma": 0.7871934965213843
+   },
+   "newly_falsified": [
+    "H_m3_a1.45",
+    "H_m4_a1.45",
+    "H_m4_a1.75",
+    "H_m5_a1.90",
+    "H_m6_a1.60",
+    "H_m6_a1.75",
+    "H_m6_a1.90",
+    "H_m7_a1.75",
+    "H_m7_a1.90"
+   ],
+   "candidate_scores": [
+    [
+     2.25,
+     0.12051109333097369
+    ],
+    [
+     2.5,
+     0.08592221337853288
+    ],
+    [
+     2.75,
+     0.20035977996579896
+    ],
+    [
+     3.0,
+     0.26204460703837423
+    ],
+    [
+     3.25,
+     0.47968661611637353
+    ],
+    [
+     3.5,
+     0.3492869362642687
+    ],
+    [
+     3.75,
+     0.3818224675032138
+    ],
+    [
+     4.0,
+     0.43948797590580113
+    ],
+    [
+     4.25,
+     0.6235926921668669
+    ],
+    [
+     4.5,
+     0.6161877583064068
+    ],
+    [
+     4.75,
+     0.5635056551596557
+    ],
+    [
+     5.0,
+     0.6837424601635966
+    ],
+    [
+     5.25,
+     0.5984036168354098
+    ],
+    [
+     5.5,
+     0.973754142458499
+    ],
+    [
+     5.75,
+     0.6114880862471525
+    ],
+    [
+     6.0,
+     0.768405770621959
+    ],
+    [
+     6.25,
+     0.611127573632097
+    ],
+    [
+     6.5,
+     1.119096433339871
+    ],
+    [
+     6.75,
+     0.8442196009504529
+    ],
+    [
+     7.0,
+     1.0010339307499792
+    ],
+    [
+     7.25,
+     0.6944002986311143
+    ],
+    [
+     7.5,
+     1.096907292926687
+    ],
+    [
+     8.0,
+     1.0668652667533922
+    ]
+   ],
+   "p_hidden_before": 0.9999999991529361,
+   "next_decision": "Still unsure: pick the next most useful measurement.",
+   "agent_messages": [
+    {
+     "agent": "planner",
+     "source": "code",
+     "message": "At year 6.5, our two leading guesses disagree the most: a planet 1.45 AU out (mass 3) (6% likely) vs a planet 1.60 AU out (mass 4) (57% likely). They predict positions 2.8× the normal measurement error apart, so measuring here should rule one of them out."
+    },
+    {
+     "agent": "scientist",
+     "source": "code",
+     "message": "Chance of a hidden planet: 100% → 100%. 9 guesses ruled out this step (22 in total). Still unsure: pick the next most useful measurement."
+    }
+   ],
+   "posterior": {
+    "H0_no_hidden": 5.128146297061567e-10,
+    "H_m3_a1.30": 1.1901098091852492e-15,
+    "H_m3_a1.45": 0.000648614106062408,
+    "H_m3_a1.60": 0.24169195068810903,
+    "H_m3_a1.75": 0.00011278264497588762,
+    "H_m3_a1.90": 1.3288981328372826e-05,
+    "H_m4_a1.30": 6.503836417414064e-23,
+    "H_m4_a1.45": 3.878373275413714e-06,
+    "H_m4_a1.60": 0.6696896785310694,
+    "H_m4_a1.75": 0.0007570706568481713,
+    "H_m4_a1.90": 0.00012216397386989602,
+    "H_m5_a1.30": 9.798611788795082e-33,
+    "H_m5_a1.45": 1.2559599724002496e-10,
+    "H_m5_a1.60": 0.08339145092364955,
+    "H_m5_a1.75": 0.0011949783042698454,
+    "H_m5_a1.90": 0.0004399119872935624,
+    "H_m6_a1.30": 5.867502816973238e-45,
+    "H_m6_a1.45": 2.2512159821515454e-17,
+    "H_m6_a1.60": 0.00048638854350183423,
+    "H_m6_a1.75": 0.0004445519275688501,
+    "H_m6_a1.90": 0.0006207404629719943,
+    "H_m7_a1.30": 1.972482985594683e-59,
+    "H_m7_a1.45": 2.2825621364149206e-26,
+    "H_m7_a1.60": 1.3845297604633654e-07,
+    "H_m7_a1.75": 3.90691849709155e-05,
+    "H_m7_a1.90": 0.0003433416188468545
+   },
+   "p_hidden": 0.9999999994871853,
+   "map_id": "H_m4_a1.60",
+   "map_p": 0.6696896785310694,
+   "cluster_mass": 0.9974904043538557,
+   "entropy_bits": 1.2374318484338092,
+   "n_falsified": 22
+  },
+  {
+   "type": "step",
+   "step": 3,
+   "n_observations": 3,
+   "status": "HIDDEN CAUSE FOUND",
+   "anomaly": {
+    "chi2": 144.7026177811087,
+    "dof": 22,
+    "p_value": 4.747346912786423e-20,
+    "significant": true,
+    "worst_time": 8.0,
+    "worst_sigma": 8.34063695120177
+   },
+   "experiment": {
+    "time": 8.0,
+    "policy": "attn",
+    "reason": "At year 8.0, our two leading guesses disagree the most: a planet 1.60 AU out (mass 3) (24% likely) vs a planet 1.60 AU out (mass 4) (67% likely). They predict positions 1.4× the normal measurement error apart, so measuring here should rule one of them out.",
+    "score": 0.6361280294140845
+   },
+   "observation": {
+    "time": 8.0,
+    "x": 0.7664511559609386,
+    "y": 0.6377240921312731
+   },
+   "obs_vs_models": {
+    "obs": [
+     0.7664511559609386,
+     0.6377240921312731
+    ],
+    "null": [
+     0.7633250272321519,
+     0.6454567206573829
+    ],
+    "map": [
+     0.7651573222262015,
+     0.6386034847632726
+    ],
+    "null_sigma": 8.34063695120177,
+    "map_sigma": 1.5643967317655418
+   },
+   "newly_falsified": [
+    "H_m5_a1.75"
+   ],
+   "candidate_scores": [
+    [
+     2.25,
+     0.003201379259064563
+    ],
+    [
+     2.5,
+     0.013291214001593693
+    ],
+    [
+     2.75,
+     0.10560508754452504
+    ],
+    [
+     3.0,
+     0.11392673908553136
+    ],
+    [
+     3.25,
+     0.006960607330979383
+    ],
+    [
+     3.5,
+     0.03257113054676082
+    ],
+    [
+     3.75,
+     0.17845933912583734
+    ],
+    [
+     4.0,
+     0.17631847555901167
+    ],
+    [
+     4.25,
+     0.011994083016863057
+    ],
+    [
+     4.5,
+     0.048320834926549046
+    ],
+    [
+     4.75,
+     0.30159155939881793
+    ],
+    [
+     5.0,
+     0.2901499553264229
+    ],
+    [
+     5.25,
+     0.012783813771819861
+    ],
+    [
+     5.5,
+     0.07972841544161839
+    ],
+    [
+     5.75,
+     0.416991135155012
+    ],
+    [
+     6.0,
+     0.37945461476616543
+    ],
+    [
+     6.25,
+     0.019546417185741446
+    ],
+    [
+     6.75,
+     0.6067525054227861
+    ],
+    [
+     7.0,
+     0.5280243282477637
+    ],
+    [
+     7.25,
+     0.021213369481380844
+    ],
+    [
+     7.5,
+     0.14257376854494716
+    ],
+    [
+     8.0,
+     0.6361280294140845
+    ]
+   ],
+   "p_hidden_before": 0.9999999994871853,
+   "next_decision": "Strong candidate found: now double-check it on new measurements.",
+   "agent_messages": [
+    {
+     "agent": "planner",
+     "source": "code",
+     "message": "At year 8.0, our two leading guesses disagree the most: a planet 1.60 AU out (mass 3) (24% likely) vs a planet 1.60 AU out (mass 4) (67% likely). They predict positions 1.4× the normal measurement error apart, so measuring here should rule one of them out."
+    },
+    {
+     "agent": "scientist",
+     "source": "code",
+     "message": "Chance of a hidden planet: 100% → 100%. 1 guess ruled out this step (23 in total). Strong candidate found: now double-check it on new measurements."
+    }
+   ],
+   "posterior": {
+    "H0_no_hidden": 1.0354428032140483e-23,
+    "H_m3_a1.30": 2.879974486412998e-18,
+    "H_m3_a1.45": 2.593718147001633e-05,
+    "H_m3_a1.60": 0.0012312659355904587,
+    "H_m3_a1.75": 1.1648946455769142e-12,
+    "H_m3_a1.90": 2.3825487557640097e-15,
+    "H_m4_a1.30": 8.250498466337802e-26,
+    "H_m4_a1.45": 1.2392786579867308e-05,
+    "H_m4_a1.60": 0.3591941638855505,
+    "H_m4_a1.75": 2.8016545206113507e-10,
+    "H_m4_a1.90": 2.909638152714395e-13,
+    "H_m5_a1.30": 1.684648397784682e-37,
+    "H_m5_a1.45": 2.567264658464937e-09,
+    "H_m5_a1.60": 0.6323659827124807,
+    "H_m5_a1.75": 1.0613508010102746e-08,
+    "H_m5_a1.90": 1.1149634880431446e-11,
+    "H_m6_a1.30": 5.913688443629463e-53,
+    "H_m6_a1.45": 2.3616812985413744e-16,
+    "H_m6_a1.60": 0.007169561258598226,
+    "H_m6_a1.75": 6.350399400335035e-08,
+    "H_m6_a1.90": 1.3410487263542236e-10,
+    "H_m7_a1.30": 8.22689222091829e-72,
+    "H_m7_a1.45": 9.881788637023781e-27,
+    "H_m7_a1.60": 5.584453818705422e-07,
+    "H_m7_a1.75": 6.01762626399403e-08,
+    "H_m7_a1.90": 5.064407514575269e-10
+   },
+   "p_hidden": 1.0,
+   "map_id": "H_m5_a1.60",
+   "map_p": 0.6323659827124807,
+   "cluster_mass": 0.9987421776081415,
+   "entropy_bits": 1.0122774189426134,
+   "n_falsified": 23
+  }
+ ],
+ "replication": {
+  "type": "replication",
+  "step": 4,
+  "n_observations": 3,
+  "status": "REPLICATION PASSED",
+  "points": [
+   {
+    "time": 8.25,
+    "obs": [
+     -0.6465346833472886,
+     0.7644492484521485
+    ],
+    "map_pred": [
+     -0.6453185482732292,
+     0.7638477402417058
+    ],
+    "null_pred": [
+     -0.6458586168049866,
+     0.764846925095238
+    ],
+    "map_sigma": 1.3567596123069758,
+    "null_sigma": 0.784354946487343
+   },
+   {
+    "time": 8.5,
+    "obs": [
+     -0.7688726836741345,
+     -0.6456695686335434
+    ],
+    "map_pred": [
+     -0.768731178690982,
+     -0.6452264304355378
+    ],
+    "null_pred": [
+     -0.7652304482579901,
+     -0.6442793432466756
+    ],
+    "map_sigma": 0.46518289176261673,
+    "null_sigma": 3.898538886930375
+   },
+   {
+    "time": 8.75,
+    "obs": [
+     0.6374378934132777,
+     -0.7717406625723405
+    ],
+    "map_pred": [
+     0.6377173223285839,
+     -0.7703042320337515
+    ],
+    "null_pred": [
+     0.6439033504458073,
+     -0.7635512876547887
+    ],
+    "map_sigma": 1.4633568296557968,
+    "null_sigma": 10.433982757303752
+   },
+   {
+    "time": 9.0,
+    "obs": [
+     0.7637898899214824,
+     0.6369325517760308
+    ],
+    "map_pred": [
+     0.7650925584219681,
+     0.6378636992119936
+    ],
+    "null_pred": [
+     0.7630965362273646,
+     0.6456244013730407
+    ],
+    "map_sigma": 1.6012435072960107,
+    "null_sigma": 8.719460348105683
+   },
+   {
+    "time": 9.25,
+    "obs": [
+     -0.645930916566414,
+     0.7654356554236915
+    ],
+    "map_pred": [
+     -0.6457656695836959,
+     0.7637268446410963
+    ],
+    "null_pred": [
+     -0.6461190427032816,
+     0.7648396029033353
+    ],
+    "map_sigma": 1.7167821224637454,
+    "null_sigma": 0.625036039277511
+   },
+   {
+    "time": 9.5,
+    "obs": [
+     -0.7680577778321455,
+     -0.6452403096185494
+    ],
+    "map_pred": [
+     -0.7694184484020002,
+     -0.6453850564155248
+    ],
+    "null_pred": [
+     -0.7653369637517046,
+     -0.6443443780921668
+    ],
+    "map_sigma": 1.3683479217302803,
+    "null_sigma": 2.864528331207707
+   },
+   {
+    "time": 9.75,
+    "obs": [
+     0.6364361965920348,
+     -0.7689562702632665
+    ],
+    "map_pred": [
+     0.6369794406833906,
+     -0.770838799093877
+    ],
+    "null_pred": [
+     0.6438126536787024,
+     -0.7634727716060039
+    ],
+    "map_sigma": 1.9593440077925726,
+    "null_sigma": 9.191347924850337
+   },
+   {
+    "time": 10.0,
+    "obs": [
+     0.7661658850347199,
+     0.6378870808905834
+    ],
+    "map_pred": [
+     0.7648796722041548,
+     0.6372830302752666
+    ],
+    "null_pred": [
+     0.7628620648941306,
+     0.6457137898127626
+    ],
+    "map_sigma": 1.4209928189034564,
+    "null_sigma": 8.495445843149332
+   }
+  ],
+  "chi2_map": 17.440552172096453,
+  "chi2_null": 365.960472437108,
+  "dof": 16,
+  "p_value": 0.357657516076506,
+  "llr_vs_null": 174.2599601325058,
+  "passed": true,
+  "anomaly": {
+   "chi2": 144.7026177811087,
+   "dof": 22,
+   "p_value": 4.747346912786423e-20,
+   "significant": true,
+   "worst_time": 8.0,
+   "worst_sigma": 8.34063695120177
+  },
+  "experiment": null,
+  "observation": null,
+  "obs_vs_models": null,
+  "newly_falsified": [],
+  "candidate_scores": [],
+  "p_hidden_before": 1.0,
+  "next_decision": "Conclusion accepted.",
+  "agent_messages": [
+   {
+    "agent": "scientist",
+    "source": "code",
+    "message": "Double-check on 8 new measurements kept hidden until now: a planet 1.60 AU out (mass 5) explains them, and 'no hidden planet' does not."
+   }
+  ],
+  "posterior": {
+   "H0_no_hidden": 1.0354428032140483e-23,
+   "H_m3_a1.30": 2.879974486412998e-18,
+   "H_m3_a1.45": 2.593718147001633e-05,
+   "H_m3_a1.60": 0.0012312659355904587,
+   "H_m3_a1.75": 1.1648946455769142e-12,
+   "H_m3_a1.90": 2.3825487557640097e-15,
+   "H_m4_a1.30": 8.250498466337802e-26,
+   "H_m4_a1.45": 1.2392786579867308e-05,
+   "H_m4_a1.60": 0.3591941638855505,
+   "H_m4_a1.75": 2.8016545206113507e-10,
+   "H_m4_a1.90": 2.909638152714395e-13,
+   "H_m5_a1.30": 1.684648397784682e-37,
+   "H_m5_a1.45": 2.567264658464937e-09,
+   "H_m5_a1.60": 0.6323659827124807,
+   "H_m5_a1.75": 1.0613508010102746e-08,
+   "H_m5_a1.90": 1.1149634880431446e-11,
+   "H_m6_a1.30": 5.913688443629463e-53,
+   "H_m6_a1.45": 2.3616812985413744e-16,
+   "H_m6_a1.60": 0.007169561258598226,
+   "H_m6_a1.75": 6.350399400335035e-08,
+   "H_m6_a1.90": 1.3410487263542236e-10,
+   "H_m7_a1.30": 8.22689222091829e-72,
+   "H_m7_a1.45": 9.881788637023781e-27,
+   "H_m7_a1.60": 5.584453818705422e-07,
+   "H_m7_a1.75": 6.01762626399403e-08,
+   "H_m7_a1.90": 5.064407514575269e-10
+  },
+  "p_hidden": 1.0,
+  "map_id": "H_m5_a1.60",
+  "map_p": 0.6323659827124807,
+  "cluster_mass": 0.9987421776081415,
+  "entropy_bits": 1.0122774189426134,
+  "n_falsified": 23
+ },
+ "outcome": {
+  "identified": true,
+  "n_observations": 3,
+  "replication_passed": true,
+  "final_status": "REPLICATION PASSED"
+ },
+ "evaluation": {
+  "note": "The real answer is used only to grade the result. The agents never see it.",
+  "truth": {
+   "hidden_body_exists": true,
+   "hidden_mass": 5e-05,
+   "hidden_a": 1.6
+  },
+  "map_id": "H_m5_a1.60",
+  "map_within_one_cell_of_truth": true,
+  "correct": true,
+  "truth_grid_index": [
+   2,
+   2
+  ]
+ }
+}

@@ -1,0 +1,88 @@
+{
+  "n_seeds_per_scenario": 100,
+  "n_scenarios": 4,
+  "policies": {
+    "attn": {
+      "runs": 400,
+      "mean_obs": 3.6075,
+      "median_obs": 3.0,
+      "success_rate": 0.9025,
+      "correct_rate": 0.98,
+      "replication_pass_rate": 0.91
+    },
+    "greedy": {
+      "runs": 400,
+      "mean_obs": 3.8725,
+      "median_obs": 3.0,
+      "success_rate": 0.875,
+      "correct_rate": 0.98,
+      "replication_pass_rate": 0.8875
+    },
+    "random": {
+      "runs": 400,
+      "mean_obs": 4.7975,
+      "median_obs": 3.0,
+      "success_rate": 0.8325,
+      "correct_rate": 0.9525,
+      "replication_pass_rate": 0.8425
+    }
+  },
+  "ratios": {
+    "random_over_attn": {
+      "ratio": 1.32986832986833,
+      "ci95": [
+        1.2516319392760027,
+        1.4121819831582711
+      ]
+    },
+    "greedy_over_attn": {
+      "ratio": 1.0734580734580734,
+      "ci95": [
+        1.0103721946009543,
+        1.1397237596213463
+      ]
+    }
+  },
+  "by_scenario": {
+    "0": {
+      "truth": {
+        "hidden_mass": 4e-05,
+        "hidden_a": 1.45
+      },
+      "random": 3.09,
+      "greedy": 3.15,
+      "attn": 3.03,
+      "random_over_attn": 1.0198019801980198
+    },
+    "1": {
+      "truth": {
+        "hidden_mass": 5e-05,
+        "hidden_a": 1.6
+      },
+      "random": 3.53,
+      "greedy": 3.08,
+      "attn": 3.02,
+      "random_over_attn": 1.1688741721854303
+    },
+    "2": {
+      "truth": {
+        "hidden_mass": 6e-05,
+        "hidden_a": 1.75
+      },
+      "random": 5.37,
+      "greedy": 4.45,
+      "attn": 4.08,
+      "random_over_attn": 1.3161764705882353
+    },
+    "3": {
+      "truth": {
+        "hidden_mass": 7e-05,
+        "hidden_a": 1.9
+      },
+      "random": 7.2,
+      "greedy": 4.81,
+      "attn": 4.3,
+      "random_over_attn": 1.6744186046511629
+    }
+  }
+}
