@@ -1,4 +1,4 @@
-# LYDH — Look where humans don't. 
+# LYDH: Look where humans don't. 
 
 Built for the Databricks × Hack-Nation *Agentic Scientific Discovery* challenge. Orchestrated by Omnigent; agents powered by Claude.
 
