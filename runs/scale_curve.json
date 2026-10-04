@@ -1,0 +1,46 @@
+{
+  "26": {
+    "random": {
+      "mean_obs": 4.75,
+      "success": 0.95
+    },
+    "attn": {
+      "mean_obs": 3.85,
+      "success": 1.0
+    },
+    "ratio": 1.2337662337662338
+  },
+  "65": {
+    "random": {
+      "mean_obs": 9.025,
+      "success": 0.7
+    },
+    "attn": {
+      "mean_obs": 6.95,
+      "success": 0.725
+    },
+    "ratio": 1.2985611510791366
+  },
+  "145": {
+    "random": {
+      "mean_obs": 11.825,
+      "success": 0.5
+    },
+    "attn": {
+      "mean_obs": 9.525,
+      "success": 0.525
+    },
+    "ratio": 1.2414698162729658
+  },
+  "257": {
+    "random": {
+      "mean_obs": 12.225,
+      "success": 0.5
+    },
+    "attn": {
+      "mean_obs": 10.425,
+      "success": 0.55
+    },
+    "ratio": 1.172661870503597
+  }
+}
